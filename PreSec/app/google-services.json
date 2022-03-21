@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "809890759239",
+    "project_id": "presec-d9343",
+    "storage_bucket": "presec-d9343.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:809890759239:android:122c6e4f34867f892aa762",
+        "android_client_info": {
+          "package_name": "com.urjalusa.presec"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "809890759239-5nj9ll02nqtdjslu86tb5a7ce09jl6h5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzU0QdrEYdrxIIu7EVPFFzKPOrDhvGeEQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "809890759239-5nj9ll02nqtdjslu86tb5a7ce09jl6h5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

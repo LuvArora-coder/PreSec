@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+    <Button
+        android:id="@+id/buttonSignUp_SignUpPage"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/circle_shape"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="@string/buttonViewSignUp"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ProgressBar
+        android:id="@+id/progressBar_SignUpPage"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:indeterminate="false"
+        android:theme="@style/MyEntity"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSignUp_SignUpPage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/checkBoxTandC_SignUpPage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/imageViewSignUp"
+                android:layout_width="250dp"
+                android:layout_height="186dp"
+                android:contentDescription="@string/sign_up_picture"
+                android:src="@drawable/sign_up_picture"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textViewSignUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/sign_up_text"
+                android:textAlignment="center"
+                android:textColor="@color/grey"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewSignUp"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <EditText
+                android:id="@+id/editTextName_SignUpPage"
+                android:layout_width="255dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:autofillHints="false"
+                android:hint="@string/hintName"
+                android:inputType="text"
+                android:textColor="@color/grey"
+                android:textColorHint="@color/grey"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textViewSignUp"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textViewForDoctor_SignUpPage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/textViewForDoctor"
+                android:textColor="@color/grey"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toTopOf="@+id/editTextEmail_SignUpPage"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextName_SignUpPage" />
+
+            <EditText
+                android:id="@+id/editTextEmail_SignUpPage"
+                android:layout_width="215dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:autofillHints="false"
+                android:hint="@string/hintEmail"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/grey"
+                android:textColorHint="@color/grey"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/editTextName_SignUpPage"
+                app:layout_constraintTop_toBottomOf="@+id/editTextName_SignUpPage"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <EditText
+                android:id="@+id/editTextPhoneNumber_SignUpPage"
+                android:layout_width="255dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:autofillHints="false"
+                android:hint="@string/hintNumber"
+                android:inputType="phone"
+                android:textColor="@color/grey"
+                android:textColorHint="@color/grey"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextEmail_SignUpPage"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <EditText
+                android:id="@+id/editTextPassword_SignUpPage"
+                android:layout_width="255dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:autofillHints="false"
+                android:ems="10"
+                android:hint="@string/hintPassword"
+                android:inputType="textPassword"
+                android:textColor="@color/grey"
+                android:textColorHint="@color/grey"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextPhoneNumber_SignUpPage"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textViewAskMode_SignUpPage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/textViewAskMode"
+                android:textColor="@color/grey"
+                android:textColorHint="@color/grey"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextPassword_SignUpPage"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupMode_SignUpPage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewAskMode_SignUpPage"
+                app:layout_constraintVertical_bias="0.0">
+
+                <RadioButton
+                    android:id="@+id/radioButtonD_SignUpPage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radioButtonDoctor"
+                    android:textColor="@color/grey"
+                    android:theme="@style/MyEntity" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonPa_SignUpPage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radioButtonPatient"
+                    android:textColor="@color/grey"
+                    android:theme="@style/MyEntity" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonPh_signUpPage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radioButtonPharmacy"
+                    android:textColor="@color/grey"
+                    android:theme="@style/MyEntity" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textViewAskGenderPatient_SignUpPage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/textViewAskGender"
+                android:textColor="@color/grey"
+                android:textSize="20sp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/radioGroupMode_SignUpPage"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupGenderPatient_SignUpPage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewAskGenderPatient_SignUpPage"
+                app:layout_constraintVertical_bias="0.0">
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radioButtonMale"
+                    android:textColor="@color/grey"
+                    android:theme="@style/MyEntity" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radioButtonFemale"
+                    android:textColor="@color/grey"
+                    android:theme="@style/MyEntity" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radioButtonLGBTQ"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/grey"
+                    android:theme="@style/MyEntity" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textViewAskBloodGroupPatient_SignUpPage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/textViewAskBloodGroup"
+                android:textColor="@color/grey"
+                android:textSize="20sp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/radioGroupGenderPatient_SignUpPage"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupBloodGroupPatient_SignUpPage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewAskBloodGroupPatient_SignUpPage"
+                app:layout_constraintVertical_bias="0.0">
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radioButtonAplus"
+                    android:textColor="@color/grey"
+                    android:theme="@style/MyEntity" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radioButtonAminus"
+                    android:textColor="@color/grey"
+                    android:theme="@style/MyEntity" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radioButtonBplus"
+                    android:textColor="@color/grey"
+                    android:theme="@style/MyEntity" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radioButtonBminus"
+                    android:textColor="@color/grey"
+                    android:theme="@style/MyEntity" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radioButtonABplus"
+                    android:textColor="@color/grey"
+                    android:theme="@style/MyEntity" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radioButtonABminuus"
+                    android:textColor="@color/grey"
+                    android:theme="@style/MyEntity" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radioButtonOplus"
+                    android:textColor="@color/grey"
+                    android:theme="@style/MyEntity" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radioButtonOminus"
+                    android:textColor="@color/grey"
+                    android:theme="@style/MyEntity" />
+
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/editTextWeightPatient_SignUpPage"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:autofillHints="false"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="@string/hintWeight"
+                android:inputType="numberDecimal"
+                android:textColor="@color/grey"
+                android:textColorHint="@color/grey"
+                android:textSize="20sp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/radioGroupBloodGroupPatient_SignUpPage"
+                app:layout_constraintVertical_bias="0.0"
+                tools:ignore="TextFields" />
+
+            <EditText
+                android:id="@+id/editTextHeightPatient_SignUpPage"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:autofillHints="false"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="@string/hintHeight"
+                android:inputType="numberDecimal"
+                android:textColor="@color/grey"
+                android:textColorHint="@color/grey"
+                android:textSize="20sp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/editTextWeightPatient_SignUpPage"
+                app:layout_constraintVertical_bias="0.0"
+                tools:ignore="TextFields" />
+
+            <EditText
+                android:id="@+id/editTextDoBPatient_SignUpPage"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:autofillHints="false"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="@string/hintDoB"
+                android:inputType="text"
+                android:textColor="@color/grey"
+                android:textColorHint="@color/grey"
+                android:textSize="20sp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextHeightPatient_SignUpPage"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <EditText
+                android:id="@+id/editTextAllergiesPatient_SignUpPage"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:autofillHints="false"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="@string/hintAllergies"
+                android:inputType="textMultiLine"
+                android:textColor="@color/grey"
+                android:textColorHint="@color/grey"
+                android:textSize="20sp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextDoBPatient_SignUpPage"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <EditText
+                android:id="@+id/editTextRegistrationNumberDoctor_SignUpPage"
+                android:layout_width="215dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:autofillHints="false"
+                android:ems="10"
+                android:hint="@string/hintRegistrationNumber"
+                android:inputType="number"
+                android:textColor="@color/grey"
+                android:textColorHint="@color/grey"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/radioGroupMode_SignUpPage"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <EditText
+                android:id="@+id/editTextAddressPharmacy_SignUpPage"
+                android:layout_width="215dp"
+                android:layout_height="50dp"
+                android:autofillHints="false"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="@string/hintAddress"
+                android:inputType="textMultiLine"
+                android:textColor="@color/grey"
+                android:textColorHint="@color/grey"
+                android:textSize="20sp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@id/editTextRegistrationNumberDoctor_SignUpPage"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/textViewAskGenderPatient_SignUpPage"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <EditText
+                android:id="@+id/editTextLicenceNumberPharmacy_SignUpPage"
+                android:layout_width="215dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:autofillHints="false"
+                android:ems="10"
+                android:hint="@string/hintLicenceNumber"
+                android:inputType="number"
+                android:textColor="@color/grey"
+                android:textColorHint="@color/grey"
+                android:textSize="20sp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/editTextAddressPharmacy_SignUpPage"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <Button
+                android:id="@+id/buttonVerifyEmail_SignUpPage"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/ic_email_verification"
+                android:text="@string/blankSpace"
+                app:layout_constraintBottom_toBottomOf="@id/editTextEmail_SignUpPage"
+                app:layout_constraintEnd_toEndOf="@id/editTextName_SignUpPage"
+                app:layout_constraintStart_toEndOf="@id/editTextEmail_SignUpPage"
+                app:layout_constraintTop_toBottomOf="@id/editTextName_SignUpPage" />
+
+            <TextView
+                android:id="@+id/textViewShowHide_SignUpPage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/showPasswordText"
+                android:textColor="@color/grey"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/editTextPassword_SignUpPage"
+                app:layout_constraintRight_toRightOf="@id/editTextPassword_SignUpPage"
+                app:layout_constraintTop_toTopOf="@id/editTextPassword_SignUpPage" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <CheckBox
+        android:id="@+id/checkBoxTandC_SignUpPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/checkBoxTandC"
+        android:textColor="@color/grey"
+        android:textSize="18sp"
+        android:theme="@style/MyEntity"
+        app:layout_constraintBottom_toTopOf="@id/progressBar_SignUpPage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
