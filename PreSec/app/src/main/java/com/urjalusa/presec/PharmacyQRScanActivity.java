@@ -1,6 +1,5 @@
 package com.urjalusa.presec;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.Manifest;
@@ -13,8 +12,6 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.Toast;
 
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
@@ -133,7 +130,6 @@ public class PharmacyQRScanActivity extends AppCompatActivity implements ZXingSc
     public void handleResult(Result rawResult) {
 
         QRCodeResult = rawResult.getText();
-        Toast.makeText(getApplicationContext(), QRCodeResult, Toast.LENGTH_SHORT).show();
         db.collection("PrescriptionDb").document(QRCodeResult).get()
                 .addOnCompleteListener(task -> {
                     if (task.isSuccessful()) {
