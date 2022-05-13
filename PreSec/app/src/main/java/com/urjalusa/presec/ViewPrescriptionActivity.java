@@ -88,7 +88,7 @@ public class ViewPrescriptionActivity extends AppCompatActivity {
         Context = intent.getStringExtra("context");
         prescriptionIdView.setText(PrescriptionId);
 
-        if (Context.equals("DoctorMyPrescriptionsPage")) {
+        if (Context.equals("DoctorMyPrescriptionsPage") || Context.equals("DoctorPatientHistoryPage")) {
             regenerate.setVisibility(View.VISIBLE);
             regenerate.setClickable(true);
         } else if (Context.equals("PharmacyPage")) {
@@ -130,6 +130,10 @@ public class ViewPrescriptionActivity extends AppCompatActivity {
                             @Override
                             public void onComplete(@NonNull Task<DocumentSnapshot> task) {
                                 if (task.isSuccessful()) {
+                                    //once a prescription is regenerated, it should not be regenerated again
+                                    regenerate.setClickable(false);
+                                    regenerate.setVisibility(View.GONE);
+
                                     DocumentSnapshot document = task.getResult();
                                     prescriptionCount = document.getString("Prescriptions made");
                                     PrescriptionId = patientId + doctorId + prescriptionCount;
@@ -156,6 +160,7 @@ public class ViewPrescriptionActivity extends AppCompatActivity {
                                     prescriptionRecord.put("Prescription Id", PrescriptionId);
                                     db.collection("PrescriptionDb").document(PrescriptionId).set(prescriptionRecord);
                                     IncrementCount(prescriptionCount);
+
                                     //Toast
                                     Toast.makeText(getApplicationContext(), "Prescription Recreated", Toast.LENGTH_SHORT).show();
                                 }

@@ -1,9 +1,258 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MyProfileActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageViewProfileClipart"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:contentDescription="@string/ProfileClipart"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/ic_doctor_my_profile" />
+
+        <TextView
+            android:id="@+id/textViewNameOfUser"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:autoSizeMaxTextSize="32sp"
+            android:autoSizeMinTextSize="28sp"
+            android:autoSizeTextType="uniform"
+            android:text="@string/randomText"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/imageViewProfileClipart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@id/imageViewProfileClipart" />
+
+        <TextView
+            android:id="@+id/textViewUsersIDView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="35dp"
+            android:text="@string/id"
+            android:textColor="#0B66AC"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@id/imageViewProfileClipart"
+            app:layout_constraintTop_toBottomOf="@id/imageViewProfileClipart" />
+
+        <TextView
+            android:id="@+id/textViewUserID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/randomText"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="@id/textViewUsersIDView"
+            app:layout_constraintTop_toBottomOf="@id/textViewUsersIDView" />
+
+        <TextView
+            android:id="@+id/textViewUsersEmailView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:text="@string/Email_ID"
+            android:textColor="#0B66AC"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@id/textViewUserID"
+            app:layout_constraintTop_toBottomOf="@id/textViewUserID" />
+
+        <TextView
+            android:id="@+id/textViewUserEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/randomText"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="@id/textViewUsersEmailView"
+            app:layout_constraintTop_toBottomOf="@id/textViewUsersEmailView" />
+
+        <TextView
+            android:id="@+id/textViewUserContactNumberView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:text="@string/Contact_Number"
+            android:textColor="#0B66AC"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@id/textViewUserEmail"
+            app:layout_constraintTop_toBottomOf="@id/textViewUserEmail" />
+
+        <TextView
+            android:id="@+id/textViewUserContactNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/randomText"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="@id/textViewUserContactNumberView"
+            app:layout_constraintTop_toBottomOf="@id/textViewUserContactNumberView" />
+
+        <TextView
+            android:id="@+id/textViewUserPasswordView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:text="@string/Password"
+            android:textColor="#0B66AC"
+            app:layout_constraintStart_toStartOf="@id/textViewUserContactNumber"
+            app:layout_constraintTop_toBottomOf="@id/textViewUserContactNumber" />
+
+        <TextView
+            android:id="@+id/textViewUserPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/PasswordValue"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="@id/textViewUserPasswordView"
+            app:layout_constraintTop_toBottomOf="@id/textViewUserPasswordView" />
+
+        <TextView
+            android:id="@+id/textViewAgeCertificationLicenseView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:text="@string/textViewAge"
+            android:textColor="#0B66AC"
+            app:layout_constraintStart_toStartOf="@id/textViewUserPassword"
+            app:layout_constraintTop_toBottomOf="@id/textViewUserPassword" />
+
+        <TextView
+            android:id="@+id/textViewAgeCertificationLicense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/randomText"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="@id/textViewAgeCertificationLicenseView"
+            app:layout_constraintTop_toBottomOf="@id/textViewAgeCertificationLicenseView" />
+
+        <TextView
+            android:id="@+id/textViewPatientHeightView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textViewHeight"
+            android:textColor="#0B66AC"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/textViewAgeCertificationLicenseView"
+            app:layout_constraintTop_toTopOf="@id/textViewAgeCertificationLicenseView" />
+
+        <TextView
+            android:id="@+id/textViewPatientHeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/randomText"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="@id/textViewPatientHeightView"
+            app:layout_constraintTop_toBottomOf="@id/textViewPatientHeightView" />
+
+        <TextView
+            android:id="@+id/textViewGenderAddressPrescriptionCountView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:text="@string/textViewAskGender"
+            android:textColor="#0B66AC"
+            app:layout_constraintStart_toStartOf="@id/textViewAgeCertificationLicense"
+            app:layout_constraintTop_toBottomOf="@id/textViewAgeCertificationLicense" />
+
+        <TextView
+            android:id="@+id/textViewGenderAddressPrescriptionCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/randomText"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="@id/textViewGenderAddressPrescriptionCountView"
+            app:layout_constraintTop_toBottomOf="@id/textViewGenderAddressPrescriptionCountView" />
+
+        <TextView
+            android:id="@+id/textViewPatientWeightView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:text="@string/textViewWeight"
+            android:textColor="#0B66AC"
+            app:layout_constraintStart_toStartOf="@id/textViewPatientHeight"
+            app:layout_constraintTop_toBottomOf="@id/textViewPatientHeight" />
+
+        <TextView
+            android:id="@+id/textViewPatientWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/randomText"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="@id/textViewPatientWeightView"
+            app:layout_constraintTop_toBottomOf="@id/textViewPatientWeightView" />
+
+        <TextView
+            android:id="@+id/textViewPatientBloodGroupView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:text="@string/textViewBloodGroup"
+            android:textColor="#0B66AC"
+            app:layout_constraintStart_toStartOf="@id/textViewGenderAddressPrescriptionCount"
+            app:layout_constraintTop_toBottomOf="@id/textViewGenderAddressPrescriptionCount" />
+
+        <TextView
+            android:id="@+id/textViewPatientBloodGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/randomText"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="@id/textViewPatientBloodGroupView"
+            app:layout_constraintTop_toBottomOf="@id/textViewPatientBloodGroupView" />
+
+        <TextView
+            android:id="@+id/textViewPatientAllergiesView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:text="@string/textViewAllergies"
+            android:textColor="#0B66AC"
+            app:layout_constraintStart_toStartOf="@id/textViewPatientBloodGroup"
+            app:layout_constraintTop_toBottomOf="@id/textViewPatientBloodGroup" />
+
+        <TextView
+            android:id="@+id/textViewPatientAllergies"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="20dp"
+            android:autoSizeMaxTextSize="24sp"
+            android:autoSizeMinTextSize="18sp"
+            android:autoSizeTextType="uniform"
+            android:paddingBottom="20dp"
+            android:text="@string/randomText"
+            android:textAlignment="viewStart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/textViewPatientAllergiesView"
+            app:layout_constraintTop_toBottomOf="@id/textViewPatientAllergiesView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

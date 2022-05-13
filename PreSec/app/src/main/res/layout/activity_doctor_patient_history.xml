@@ -1,10 +1,197 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".DoctorPatientHistoryActivity">
 
+  <LinearLayout
+      android:id="@+id/linearLayoutPatientDetails_DoctorPatientHistoryPage"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_horizontal"
+      android:orientation="horizontal"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:orientation="vertical"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="12dp"
+          android:paddingStart="8dp"
+          android:paddingEnd="8dp"
+          android:text="@string/textViewPatientId"
+          android:textSize="21sp"
+          android:textStyle="bold" />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="21dp"
+          android:paddingStart="8dp"
+          android:paddingEnd="8dp"
+          android:text="@string/textViewPatientName"
+          android:textSize="21sp"
+          android:textStyle="bold" />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="31dp"
+          android:paddingStart="8dp"
+          android:paddingEnd="8dp"
+          android:text="@string/textViewBloodGroup"
+          android:textSize="21sp"
+          android:textStyle="bold" />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="21dp"
+          android:paddingStart="8dp"
+          android:paddingEnd="8dp"
+          android:text="@string/textViewAllergies"
+          android:textSize="21sp"
+          android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:orientation="vertical"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp">
+
+      <EditText
+          android:id="@+id/editTextPatientId_DoctorPatientHistoryPage"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:ems="10"
+          android:hint="@string/blankSpace"
+          android:importantForAutofill="no"
+          android:inputType="number"
+          android:paddingStart="8dp"
+          android:paddingEnd="8dp"
+          android:textSize="21sp"
+          tools:ignore="SpeakableTextPresentCheck" />
+
+      <TextView
+          android:id="@+id/textViewPatientNameData_DoctorPatientHistoryPage"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:ems="10"
+          android:paddingStart="8dp"
+          android:paddingTop="8dp"
+          android:paddingEnd="8dp"
+          android:paddingBottom="8dp"
+          android:text="@string/blankSpace"
+          android:textSize="21sp" />
+
+      <TextView
+          android:id="@+id/textViewBloodGroupData_DoctorPatientHistoryPage"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:ems="10"
+          android:paddingStart="8dp"
+          android:paddingTop="8dp"
+          android:paddingEnd="8dp"
+          android:paddingBottom="8dp"
+          android:text="@string/blankSpace"
+          android:textSize="21sp" />
+
+      <TextView
+          android:id="@+id/textViewAllergiesData_DoctorPatientHistoryPage"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:ems="10"
+          android:paddingStart="8dp"
+          android:paddingTop="8dp"
+          android:paddingEnd="8dp"
+          android:paddingBottom="8dp"
+          android:text="@string/blankSpace"
+          android:textSize="21sp" />
+
+    </LinearLayout>
+
+  </LinearLayout>
+
+  <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/recyclerView_DoctorPatientHistoryPage"
+      android:layout_width="match_parent"
+      android:layout_height="0sp"
+      android:layout_above="@id/constraintLayoutDocNavBar_DoctorPatientHistoryPage"
+      android:layout_below="@id/linearLayoutPatientDetails_DoctorPatientHistoryPage"
+      android:paddingStart="4dp"
+      android:paddingEnd="4dp"
+      android:scrollbars="vertical"
+      app:layout_constraintBottom_toTopOf="@id/constraintLayoutDocNavBar_DoctorPatientHistoryPage"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/linearLayoutPatientDetails_DoctorPatientHistoryPage" />
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:id="@+id/constraintLayoutDocNavBar_DoctorPatientHistoryPage"
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:layout_alignParentBottom="true"
+      android:background="@color/colorPrimary"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent">
+
+    <Button
+        android:id="@+id/buttonViewCreatePrescription_NavigationLayoutDoctor"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableBottom="@drawable/ic_create_prescription"
+        android:drawableTint="@android:color/white"
+        android:paddingHorizontal="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/buttonViewMyPrescriptions_NavigationLayoutDoctor"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/buttonViewMyPrescriptions_NavigationLayoutDoctor"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableBottom="@drawable/ic_doctor_made_prescriptions"
+        android:drawableTint="@android:color/white"
+        android:paddingHorizontal="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/buttonViewPatientHistory_NavigationLayoutDoctor"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableBottom="@drawable/ic_user_specific_prescriptions"
+        android:drawableTint="@android:color/white"
+        android:paddingHorizontal="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/buttonViewMyPrescriptions_NavigationLayoutDoctor"
+        tools:ignore="SpeakableTextPresentCheck" />
+
   </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

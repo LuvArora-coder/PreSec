@@ -100,7 +100,7 @@ public class PharmacyQRScanActivity extends AppCompatActivity implements ZXingSc
         switch (item.getItemId()) {
             case R.id.menuItemLogOut_SettingsPage:
                 deviceUser.signOut();
-                intent = new Intent(getApplicationContext(), LoginActivity.class);
+                intent = new Intent(getApplicationContext(), StartPageActivity.class);
                 startActivity(intent);
                 finish();
                 break;
@@ -137,8 +137,6 @@ public class PharmacyQRScanActivity extends AppCompatActivity implements ZXingSc
                         EncryptionStatus = Document.getBoolean("Encryption Status");
                         if (EncryptionStatus) {
                             DecryptPrescription();
-                            documentReference = db.collection("PrescriptionDb").document(QRCodeResult);
-                            documentReference.update("Encryption Status", false);
                             //recreate();
                         } else {
                             Toast.makeText(PharmacyQRScanActivity.this, "Medicine already provided", Toast.LENGTH_SHORT).show();
@@ -180,7 +178,8 @@ public class PharmacyQRScanActivity extends AppCompatActivity implements ZXingSc
                     decryptedOutput = new String(decryptedOutputByte);
                     documentReference = db.collection("PrescriptionDb").document(QRCodeResult);
                     documentReference.update("Prescription Details", decryptedOutput);
-                    Intent intent = new Intent(PharmacyQRScanActivity.this, ViewPrescriptionActivity.class);
+                    documentReference.update("Encryption Status", false);
+                    Intent intent = new Intent(getApplicationContext(), ViewPrescriptionActivity.class);
                     intent.putExtra("Prescription Id", QRCodeResult);
                     intent.putExtra("context", "PharmacyPage");
                     intent.putExtra("id", id);

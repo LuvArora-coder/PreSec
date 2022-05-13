@@ -336,7 +336,7 @@ public class DoctorCreatePrescriptionActivity extends AppCompatActivity {
         switch (item.getItemId()) {
             case R.id.menuItemLogOut_SettingsPage:
                 deviceUser.signOut();
-                intent = new Intent(getApplicationContext(), LoginActivity.class);
+                intent = new Intent(getApplicationContext(), StartPageActivity.class);
                 startActivity(intent);
                 finish();
                 break;

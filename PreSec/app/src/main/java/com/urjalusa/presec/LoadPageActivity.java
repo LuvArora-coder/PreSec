@@ -36,7 +36,7 @@ public class LoadPageActivity extends AppCompatActivity {
                 String uid = deviceUser.getUid();
                 goToNextPage(uid);
             } else {
-                Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
+                Intent intent = new Intent(getApplicationContext(), StartPageActivity.class);
                 startActivity(intent);
                 finish();
             }

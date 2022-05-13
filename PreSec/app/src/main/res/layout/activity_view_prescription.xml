@@ -12,6 +12,8 @@
         android:layout_height="48dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
         android:background="@drawable/circle_shape"
         android:clickable="false"
         android:drawableTop="@drawable/ic_regenerate"
