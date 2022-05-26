@@ -3,7 +3,10 @@ package com.urjalusa.presec;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.app.Dialog;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -67,6 +70,7 @@ public class DoctorCreatePrescriptionActivity extends AppCompatActivity {
     private String currentDay;
     private String currentMonth;
     private String currentYear;
+    private Dialog confirmationDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -304,6 +308,10 @@ public class DoctorCreatePrescriptionActivity extends AppCompatActivity {
                 medicineDuration.setText("");
                 viewMedicines.setText("");
                 patientAge.setText("");
+                confirmationDialog = new Dialog(this);
+                confirmationDialog.setContentView(R.layout.popup);
+                confirmationDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+                confirmationDialog.show();
             }
         });
     }

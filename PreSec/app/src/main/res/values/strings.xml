@@ -91,4 +91,6 @@
     <string name="if_no_prescription_of_doctor">Prescriptions made by you will\nbe seen here</string>
     <string name="if_no_prescriptions_patient_prescription_list">Your prescriptions will be\nseen here</string>
     <string name="textViewAboutUsTitle">About Us:</string>
+    <string name="todo">TODO</string>
+    <string name="success">SUCCESS</string>
 </resources>

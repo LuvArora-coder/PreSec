@@ -3,19 +3,26 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/KJSCE Notes/3rd year/6th Sem/MiniProject/PreSec/app/src/main/res/drawable/backpop.xml" value="0.1675" />
         <entry key="..\:/KJSCE Notes/3rd year/6th Sem/MiniProject/PreSec/app/src/main/res/drawable/ic_add_medicine_button.xml" value="0.1825" />
+        <entry key="..\:/KJSCE Notes/3rd year/6th Sem/MiniProject/PreSec/app/src/main/res/drawable/ic_doctor_my_profile.xml" value="0.242" />
+        <entry key="..\:/KJSCE Notes/3rd year/6th Sem/MiniProject/PreSec/app/src/main/res/drawable/ic_patient_myprofile.xml" value="0.242" />
+        <entry key="..\:/KJSCE Notes/3rd year/6th Sem/MiniProject/PreSec/app/src/main/res/drawable/indicator_selector.xml" value="0.242" />
         <entry key="..\:/KJSCE Notes/3rd year/6th Sem/MiniProject/PreSec/app/src/main/res/layout-v23/activity_doctor_create_prescription.xml" value="0.18802083333333333" />
         <entry key="..\:/KJSCE Notes/3rd year/6th Sem/MiniProject/PreSec/app/src/main/res/layout/activity_doctor_create_prescription.xml" value="0.33" />
         <entry key="..\:/KJSCE Notes/3rd year/6th Sem/MiniProject/PreSec/app/src/main/res/layout/activity_doctor_my_prescriptions.xml" value="0.33" />
         <entry key="..\:/KJSCE Notes/3rd year/6th Sem/MiniProject/PreSec/app/src/main/res/layout/activity_doctor_patient_history.xml" value="0.36666666666666664" />
+        <entry key="..\:/KJSCE Notes/3rd year/6th Sem/MiniProject/PreSec/app/src/main/res/layout/activity_login.xml" value="0.259946949602122" />
         <entry key="..\:/KJSCE Notes/3rd year/6th Sem/MiniProject/PreSec/app/src/main/res/layout/activity_my_profile.xml" value="0.1" />
         <entry key="..\:/KJSCE Notes/3rd year/6th Sem/MiniProject/PreSec/app/src/main/res/layout/activity_patient_prescription_list.xml" value="0.18802083333333333" />
         <entry key="..\:/KJSCE Notes/3rd year/6th Sem/MiniProject/PreSec/app/src/main/res/layout/activity_patient_qr_display.xml" value="0.1527777777777778" />
         <entry key="..\:/KJSCE Notes/3rd year/6th Sem/MiniProject/PreSec/app/src/main/res/layout/activity_pharmacy_qr_scan.xml" value="0.18802083333333333" />
-        <entry key="..\:/KJSCE Notes/3rd year/6th Sem/MiniProject/PreSec/app/src/main/res/layout/activity_start_page.xml" value="0.5" />
+        <entry key="..\:/KJSCE Notes/3rd year/6th Sem/MiniProject/PreSec/app/src/main/res/layout/activity_sign_up.xml" value="0.36666666666666664" />
+        <entry key="..\:/KJSCE Notes/3rd year/6th Sem/MiniProject/PreSec/app/src/main/res/layout/activity_start_page.xml" value="0.25" />
         <entry key="..\:/KJSCE Notes/3rd year/6th Sem/MiniProject/PreSec/app/src/main/res/layout/activity_view_prescription.xml" value="0.1" />
         <entry key="..\:/KJSCE Notes/3rd year/6th Sem/MiniProject/PreSec/app/src/main/res/layout/dialog_change_password.xml" value="0.1" />
         <entry key="..\:/KJSCE Notes/3rd year/6th Sem/MiniProject/PreSec/app/src/main/res/layout/layout_screen_fragment.xml" value="0.1" />
+        <entry key="..\:/KJSCE Notes/3rd year/6th Sem/MiniProject/PreSec/app/src/main/res/layout/popup.xml" value="0.33" />
         <entry key="..\:/KJSCE Notes/3rd year/6th Sem/MiniProject/PreSec/app/src/main/res/layout/prescription_card_view.xml" value="0.36666666666666664" />
         <entry key="..\:/KJSCE Notes/3rd year/6th Sem/MiniProject/PreSec/app/src/main/res/menu/settings_menu.xml" value="0.1" />
       </map>

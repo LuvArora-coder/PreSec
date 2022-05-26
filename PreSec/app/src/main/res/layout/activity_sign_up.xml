@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#0091EA"
     tools:context=".SignUpActivity">
 
     <Button
@@ -74,7 +75,8 @@
                 android:layout_marginTop="15dp"
                 android:text="@string/sign_up_text"
                 android:textAlignment="center"
-                android:textColor="@color/grey"
+                android:textColor="@android:color/white"
+        
                 android:textSize="30sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -90,8 +92,8 @@
                 android:autofillHints="false"
                 android:hint="@string/hintName"
                 android:inputType="text"
-                android:textColor="@color/grey"
-                android:textColorHint="@color/grey"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
                 android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -104,7 +106,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/textViewForDoctor"
-                android:textColor="@color/grey"
+                android:textColor="@android:color/white"
                 android:visibility="invisible"
                 app:layout_constraintBottom_toTopOf="@+id/editTextEmail_SignUpPage"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -119,8 +121,8 @@
                 android:autofillHints="false"
                 android:hint="@string/hintEmail"
                 android:inputType="textEmailAddress"
-                android:textColor="@color/grey"
-                android:textColorHint="@color/grey"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
                 android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -137,8 +139,8 @@
                 android:autofillHints="false"
                 android:hint="@string/hintNumber"
                 android:inputType="phone"
-                android:textColor="@color/grey"
-                android:textColorHint="@color/grey"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
                 android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -155,8 +157,8 @@
                 android:ems="10"
                 android:hint="@string/hintPassword"
                 android:inputType="textPassword"
-                android:textColor="@color/grey"
-                android:textColorHint="@color/grey"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -169,8 +171,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:text="@string/textViewAskMode"
-                android:textColor="@color/grey"
-                android:textColorHint="@color/grey"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -193,7 +195,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/radioButtonDoctor"
-                    android:textColor="@color/grey"
+                    android:textColor="@android:color/white"
                     android:theme="@style/MyEntity" />
 
                 <RadioButton
@@ -201,7 +203,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/radioButtonPatient"
-                    android:textColor="@color/grey"
+                    android:textColor="@android:color/white"
                     android:theme="@style/MyEntity" />
 
                 <RadioButton
@@ -209,7 +211,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/radioButtonPharmacy"
-                    android:textColor="@color/grey"
+                    android:textColor="@android:color/white"
                     android:theme="@style/MyEntity" />
 
             </RadioGroup>
@@ -220,7 +222,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:text="@string/textViewAskGender"
-                android:textColor="@color/grey"
+                android:textColor="@android:color/white"
+        
                 android:textSize="20sp"
                 android:visibility="invisible"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -244,14 +247,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/radioButtonMale"
-                    android:textColor="@color/grey"
+                    android:textColor="@android:color/white"
                     android:theme="@style/MyEntity" />
 
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/radioButtonFemale"
-                    android:textColor="@color/grey"
+                    android:textColor="@android:color/white"
                     android:theme="@style/MyEntity" />
 
                 <RadioButton
@@ -259,7 +262,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/radioButtonLGBTQ"
                     android:textAlignment="viewStart"
-                    android:textColor="@color/grey"
+                    android:textColor="@android:color/white"
                     android:theme="@style/MyEntity" />
 
             </RadioGroup>
@@ -270,7 +273,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:text="@string/textViewAskBloodGroup"
-                android:textColor="@color/grey"
+                android:textColor="@android:color/white"
                 android:textSize="20sp"
                 android:visibility="invisible"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -294,56 +297,56 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/radioButtonAplus"
-                    android:textColor="@color/grey"
+                    android:textColor="@android:color/white"
                     android:theme="@style/MyEntity" />
 
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/radioButtonAminus"
-                    android:textColor="@color/grey"
+                    android:textColor="@android:color/white"
                     android:theme="@style/MyEntity" />
 
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/radioButtonBplus"
-                    android:textColor="@color/grey"
+                    android:textColor="@android:color/white"
                     android:theme="@style/MyEntity" />
 
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/radioButtonBminus"
-                    android:textColor="@color/grey"
+                    android:textColor="@android:color/white"
                     android:theme="@style/MyEntity" />
 
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/radioButtonABplus"
-                    android:textColor="@color/grey"
+                    android:textColor="@android:color/white"
                     android:theme="@style/MyEntity" />
 
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/radioButtonABminuus"
-                    android:textColor="@color/grey"
+                    android:textColor="@android:color/white"
                     android:theme="@style/MyEntity" />
 
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/radioButtonOplus"
-                    android:textColor="@color/grey"
+                    android:textColor="@android:color/white"
                     android:theme="@style/MyEntity" />
 
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/radioButtonOminus"
-                    android:textColor="@color/grey"
+                    android:textColor="@android:color/white"
                     android:theme="@style/MyEntity" />
 
             </RadioGroup>
@@ -358,8 +361,9 @@
                 android:gravity="start|top"
                 android:hint="@string/hintWeight"
                 android:inputType="numberDecimal"
-                android:textColor="@color/grey"
-                android:textColorHint="@color/grey"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
+        
                 android:textSize="20sp"
                 android:visibility="invisible"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -379,8 +383,8 @@
                 android:gravity="start|top"
                 android:hint="@string/hintHeight"
                 android:inputType="numberDecimal"
-                android:textColor="@color/grey"
-                android:textColorHint="@color/grey"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
                 android:textSize="20sp"
                 android:visibility="invisible"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -400,8 +404,8 @@
                 android:gravity="start|top"
                 android:hint="@string/hintDoB"
                 android:inputType="text"
-                android:textColor="@color/grey"
-                android:textColorHint="@color/grey"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
                 android:textSize="20sp"
                 android:visibility="invisible"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -420,8 +424,8 @@
                 android:gravity="start|top"
                 android:hint="@string/hintAllergies"
                 android:inputType="textMultiLine"
-                android:textColor="@color/grey"
-                android:textColorHint="@color/grey"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
                 android:textSize="20sp"
                 android:visibility="invisible"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -439,8 +443,8 @@
                 android:ems="10"
                 android:hint="@string/hintRegistrationNumber"
                 android:inputType="number"
-                android:textColor="@color/grey"
-                android:textColorHint="@color/grey"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
                 android:visibility="invisible"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -457,8 +461,8 @@
                 android:gravity="start|top"
                 android:hint="@string/hintAddress"
                 android:inputType="textMultiLine"
-                android:textColor="@color/grey"
-                android:textColorHint="@color/grey"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
                 android:textSize="20sp"
                 android:visibility="invisible"
                 app:layout_constraintBottom_toBottomOf="@id/editTextRegistrationNumberDoctor_SignUpPage"
@@ -476,8 +480,8 @@
                 android:ems="10"
                 android:hint="@string/hintLicenceNumber"
                 android:inputType="number"
-                android:textColor="@color/grey"
-                android:textColorHint="@color/grey"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
                 android:textSize="20sp"
                 android:visibility="invisible"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -503,7 +507,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/showPasswordText"
-                android:textColor="@color/grey"
+                android:textColor="@android:color/white"
+        
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="@id/editTextPassword_SignUpPage"
                 app:layout_constraintRight_toRightOf="@id/editTextPassword_SignUpPage"
@@ -518,7 +523,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/checkBoxTandC"
-        android:textColor="@color/grey"
+        android:textColor="@android:color/white"
+        
         android:textSize="18sp"
         android:theme="@style/MyEntity"
         app:layout_constraintBottom_toTopOf="@id/progressBar_SignUpPage"
